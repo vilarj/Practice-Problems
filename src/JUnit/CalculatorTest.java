@@ -31,7 +31,6 @@ class CalculatorTest {
                     Assertions.assertEquals(-4, new Calculator(-2, 2).Subtract());
                 }
         );
-
     }
 
     @Test

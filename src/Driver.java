@@ -1,12 +1,13 @@
-import Problems.Calculator;
+import Problems.cigarParty;
 
 public class Driver {
     public static void main(String[] args) {
-        Calculator p1 = new Calculator(1,2);
+        cigarParty c = new cigarParty();
 
-        System.out.println(p1.Add());
-        System.out.println(p1.Subtract());
-        System.out.println(p1.Multiply());
-        System.out.println(p1.Divide());
+        System.out.println(c.cigars(30, false)); // false
+        System.out.println(c.cigars(50, false)); // true
+        System.out.println(c.cigars(70, true)); // true
+        System.out.println(c.cigars(30, true)); // false
+        System.out.println(c.cigars(39, true)); // false
     }
 }
