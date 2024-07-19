@@ -1,9 +1,8 @@
-package Problems;
+package JUnit;
 
+import Problems.Or35;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class Or35Test {
 
