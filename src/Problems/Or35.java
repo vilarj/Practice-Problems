@@ -10,7 +10,7 @@ package Problems;
  */
 public class Or35 {
 
-    boolean isMultipleOr35(int n) {
+    public boolean isMultipleOr35(int n) {
         return n % 3 == 0 || n % 5 == 0;
     }
 }
