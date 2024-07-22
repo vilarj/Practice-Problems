@@ -10,7 +10,7 @@ package Problems;
  */
 public class startHi {
 
-    public boolean StartsWithHi(String str) {
+    public boolean startsWithHi(String str) {
         if (str.length() < 2) {return false;}
 
         return str.contains("hi");
