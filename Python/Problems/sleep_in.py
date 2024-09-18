@@ -9,5 +9,6 @@ sleep_in(True, False) → False
 sleep_in(False, True) → True
 """
 class SleepIn:
-    def sleep_in(self, weekday, vacation):
+    @staticmethod
+    def sleep_in(weekday: bool, vacation: bool) -> bool:
         return not weekday or vacation
