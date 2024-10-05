@@ -2,6 +2,7 @@ import unittest
 
 from Problems.diff21 import Diff21
 from Problems.monkey_trouble import MonkeyTrouble
+from Problems.parrot_trouble import ParrotTrouble
 from Problems.sleep_in import SleepIn
 from Problems.sum_double import SumDouble
 
@@ -31,12 +32,26 @@ class TestCases(unittest.TestCase):
         self.assertIs(SumDouble.sum_double(0, 1), 1)
         self.assertIs(SumDouble.sum_double(3, 4), 7)
 
+
     def test_diff21(self):
         self.assertIs(Diff21.diff21(19),2)
         self.assertIs(Diff21.diff21(10),11)
         self.assertIs(Diff21.diff21(21),0)
         self.assertIs(Diff21.diff21(22),2)
         self.assertIs(Diff21.diff21(25),8)
+
+
+    def test_parrot_trouble(self):
+        self.assertIs(ParrotTrouble.parrot_trouble(True, 6),True)
+        self.assertIs(ParrotTrouble.parrot_trouble(True, 7),False)
+        self.assertIs(ParrotTrouble.parrot_trouble(False, 6),False)
+        self.assertIs(ParrotTrouble.parrot_trouble(True, 21),True)
+        self.assertIs(ParrotTrouble.parrot_trouble(False, 21),False)
+        self.assertIs(ParrotTrouble.parrot_trouble(False, 20),False)
+        self.assertIs(ParrotTrouble.parrot_trouble(True, 23),True)
+        self.assertIs(ParrotTrouble.parrot_trouble(False, 23),False)
+        self.assertIs(ParrotTrouble.parrot_trouble(True, 20),False)
+        self.assertIs(ParrotTrouble.parrot_trouble(False, 12),False)
 
 
 if __name__ == '__main__':
